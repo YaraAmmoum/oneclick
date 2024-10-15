@@ -1,0 +1,59 @@
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .success-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .icon-container {
+    font-size: 60px;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .checkmark {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .btnSuccess {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #c495f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btnSuccess:hover {
+    background-color: #755990;
+    transition: 0.3s;
+  }
+  

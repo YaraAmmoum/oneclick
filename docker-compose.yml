@@ -1,0 +1,27 @@
+services:
+  # Backend service
+  backend:
+    build: ./server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app
+    environment:
+       MONGO_URL: "mongodb+srv://root:root@cluster0.8nkuq.mongodb.net/yourDatabase?retryWrites=true&w=majority"
+    
+    depends_on:
+      - mongo
+
+  # Frontend service
+  frontend:
+    build: ./clientfront
+    ports:
+      - "3000:80"
+    volumes:
+      - ./clientfront:/app
+    depends_on:
+      - backend
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"

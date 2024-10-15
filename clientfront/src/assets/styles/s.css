@@ -1,0 +1,129 @@
+
+.app {
+  max-width: 1225px;
+  margin: 0 auto;
+}
+
+.h1 {
+  color: #6a1b9a;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 400px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  height: auto;
+  margin-top: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filters h3 {
+  margin-bottom: 10px;
+  color: #6a1b9a;
+}
+
+.filters select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  width: calc(100% - 220px);
+}
+.product-card a, 
+.linkdetails {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card a:hover {
+  text-decoration: none;
+}
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.proHead {
+  color: #333;
+  margin-bottom: 15px;
+
+  font-size: 20px;
+}
+
+.proPara {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btnList {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.add-to-cart-btn {
+  background-color: #C495F0;
+  color: white;
+  width: 140px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #5a1282;
+}
+
+@media(max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-list {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
